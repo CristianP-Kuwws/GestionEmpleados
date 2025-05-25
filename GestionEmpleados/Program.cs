@@ -28,7 +28,7 @@ namespace GestionEmpleados
 
             gestionar.ActualizarEmpleado(1, empHorasActualizado);
 
-            Console.WriteLine("\n=== Después de Actualizar ===\n");
+            Console.WriteLine("\n- - - Informe al actualizar empleado - - -\n");
             gestionar.GenerarReporteSemanal();
         }
     }
