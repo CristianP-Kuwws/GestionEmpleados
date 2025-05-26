@@ -14,7 +14,7 @@ namespace GestionEmpleados.Entities
 
         public string NumeroSeguroSocial { get; set; }
 
-        public Empleado(string apellido, string numeroSeguroSocial)
+        public Empleado(string apellido, string numeroSeguroSocial) //Este constructor sirve para la clase EmpleadoPorHoras, ya que esta no pide PrimerNombre en el SRS
         {
             ApellidoPaterno = apellido;
             NumeroSeguroSocial = numeroSeguroSocial;
