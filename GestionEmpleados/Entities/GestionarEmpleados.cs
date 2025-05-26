@@ -27,7 +27,14 @@ namespace GestionEmpleados.Entities
         {
             foreach (var empleado in Empleados)
             {
-                Console.WriteLine($"Empleado {empleado.PrimerNombre} {empleado.ApellidoPaterno}");
+                if (string.IsNullOrEmpty(empleado.PrimerNombre)) // En caso de que el empleado no tenga nombre.
+                {
+                    Console.WriteLine($"Empleado {empleado.ApellidoPaterno}");
+                } 
+                else
+                {
+                   Console.WriteLine($"Empleado {empleado.PrimerNombre} {empleado.ApellidoPaterno}");
+                }
                 Console.WriteLine(empleado.ObtenerDetallesPago());
                 Console.WriteLine("--------------------------------");
             }
